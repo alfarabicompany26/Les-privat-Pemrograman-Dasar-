@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les Privat Coding Mifkhor - MCD </title>
+<style>
+  body { font-family: sans-serif; margin:0; background:#f5f7ff; }
+  header { 
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('pondok.jpg');
+  background-size: cover;
+  background-position: center;
+  color:white; 
+  padding:60px 30px; 
+  text-align:center; 
+}
+  header h1 { margin:0; font-size:28px; }
+  .container { max-width:800px; margin:20px auto; padding:15px; }
+  .card { background:white; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.05); margin-bottom:15px; }
+  .btn { display:block; background:#22c55e; color:white; text-align:center; padding:15px; border-radius:10px; text-decoration:none; font-weight:bold; font-size:18px; }
+  input, select { width:100%; padding:12px; margin:8px 0; border:1px solid #ddd; border-radius:8px; box-sizing:border-box; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Les Privat Coding Mifkhor - byMCD</h1>
+  <p>Untuk semua Kalangan baik santri,pelajar, pekerja/pengangguran - Datang ke Pondok putra mifkhor/ Online</p>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h3>🔥 Kenapa pilih kami?</h3>
+    <p>✅ Mentor berpengalaman sering ke warnet           <br>✅ Gratis untuk 1x pertemuan pertama<br>✅ Bayar per pertemuan
+    <br>✅ Harga mulai dari 5k/1x pertemuan<p>
+    <a class="btn" href="https://wa.me/6281234567890?text=Halo%20kak%20mau%20daftar%20les">Daftar via WhatsApp</a>
+  </div>
+
+  <div class="card">
+    <h3>📝 Form Pendaftaran Cepat</h3>
+    <input type="text" id="nama" placeholder="Nama">
+    <input type="text" id="usia" placeholder="Usia">
+    <input type="text" id="alamat" placeholder="Alamat">
+  <h3>👤 Daftar sebagai</h3>
+    <select id="kelas">
+      <option>Santri idamanz😎</option>
+      <option>Pelajar/Mahasiswa</option>
+      <option>Pekerja keras💪</option>
+      <option>Financial freedom [pengangguran]</option>
+    </select>
+    <select id="mapel">
+      <option>Pemrograman Dasar</option>
+      <option>Python, CSS, Javascript</option>
+      <option>Bahasa Inggris</option>
+      <option>Bisnis Air Garam rukyah🤣</option>
+    </select>
+    <button class="btn" onclick="kirim()">Kirim ke WA</button>
+  </div>
+</div>
+
+<script>
+function kirim(){
+  let nama = document.getElementById('nama').value;
+  let kelas = document.getElementById('kelas').value;
+  let mapel = document.getElementById('mapel').value;
+  if(nama == ""){ alert("Isi nama dulu"); return; }
+  let pesan = `Halo kak, mau daftar les:%0A Nama: ${nama}%0A Kelas: ${kelas}%0A Mapel: ${mapel}`;
+  window.open(`https://wa.me/6281234567890?text=${pesan}`, '_blank');
+}
+</script>
+    <h3 style="text-align: center;">Ayo Daftar Sekarang juga!</h3>
+    <div style="text-align: center; padding: 30px 20px; background: white; margin-top: 20px; border-radius: 15px;">
+  <h3 style="margin-bottom: 15px;">Follow Social Media</h3>
+  <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+    
+    <a href="https://www.instagram.com/berpikirkritis62?stkn=aXBuc3g0c25ubHYz" target="_blank" style="text-decoration: none; background: #E1306C; color: white; padding: 10px 18px; border-radius: 20px; font-weight: bold;">
+      Instagram
+    </a>
+
+
+    <a href="https://youtube.com/@meteorahistories" target="_blank" style="text-decoration: none; background: #FF0000; color: white; padding: 10px 18px; border-radius: 20px; font-weight: bold;">
+      YouTube
+    </a>
+
+  </div>
+  <p style="margin-top: 15px; color: gray; font-size: 13px;">© 2026 les privat coding mifkhor byMCD</p>
+</div>
+</body>        
+</html>
